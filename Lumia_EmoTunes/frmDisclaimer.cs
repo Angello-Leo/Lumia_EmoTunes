@@ -40,7 +40,7 @@ namespace Lumia_EmoTunes
             centerFormat.Alignment = StringAlignment.Center;
 
             using (Font titleFont = new Font("Iceberg", 44, FontStyle.Bold))
-            using (Font subFont = new Font("Iceberg", 25, FontStyle.Regular))
+            using (Font subFont = new Font("Iceberg", 17, FontStyle.Regular))
             {
                 string title = "Disclaimer";
                 string subtitle = "EmoTunes uses your camera to match your music to your expression.\n" +
@@ -73,7 +73,7 @@ namespace Lumia_EmoTunes
             Rectangle imgRect = GetImageDisplayRectangle(pictureBox1);
             int centerX = imgRect.X + (imgRect.Width / 2);
 
-            int yPosFromTopOfImage = 520;
+            int yPosFromTopOfImage = 450;
 
 
             int gapBetweenButtons = 100;
@@ -94,7 +94,7 @@ namespace Lumia_EmoTunes
 
         private void RoundedButton1_Click(object sender, EventArgs e)
         {
-            frmLoading nextForm = new frmLoading();
+            frmUserDetection nextForm = new frmUserDetection();
             nextForm.Show();
             this.Hide();
         }

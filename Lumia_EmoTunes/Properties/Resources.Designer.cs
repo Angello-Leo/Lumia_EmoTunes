@@ -123,6 +123,16 @@ namespace Lumia_EmoTunes.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lumia_DisclaimerBg__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Lumia_DisclaimerBg (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lumia_DisclaimerWhite {
             get {
                 object obj = ResourceManager.GetObject("Lumia_DisclaimerWhite", resourceCulture);

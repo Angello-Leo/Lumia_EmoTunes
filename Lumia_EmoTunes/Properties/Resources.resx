@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Lumia_DisclaimerWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lumia_DisclaimerWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Lumia_Bg-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lumia_Bg-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,13 +127,19 @@
   <data name="Lumia_DisclaimerBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lumia_DisclaimerBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Iceberg-Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iceberg-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Lumia_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lumia_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lumia_CameraBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lumia_CameraBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iceberg-Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iceberg-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Lumia_DisclaimerWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lumia_DisclaimerWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lumia_DisclaimerBg (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lumia_DisclaimerBg (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

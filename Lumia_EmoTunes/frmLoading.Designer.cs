@@ -40,17 +40,17 @@
             // 
             tableLayoutPanel1.BackColor = Color.Transparent;
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 5F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 90F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 5F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.Controls.Add(pictureBox1, 1, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.Size = new Size(800, 450);
             tableLayoutPanel1.TabIndex = 0;
             // 
@@ -58,9 +58,9 @@
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.Lumia_DisclaimerWhite;
-            pictureBox1.Location = new Point(43, 25);
+            pictureBox1.Location = new Point(163, 93);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(714, 399);
+            pictureBox1.Size = new Size(474, 264);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
