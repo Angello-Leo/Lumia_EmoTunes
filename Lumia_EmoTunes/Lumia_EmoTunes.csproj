@@ -11,6 +11,9 @@
   <ItemGroup>
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.74.0.4137" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.8" />
     <PackageReference Include="Microsoft.ML" Version="5.0.0" />
     <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.25.0" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3912.50" />
@@ -36,6 +39,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="emotion-ferplus-8.onnx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

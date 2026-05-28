@@ -11,16 +11,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Extensions.Configuration;
 
 namespace Lumia_EmoTunes
 {
     public partial class frmMain : Form
     {
+        private readonly IConfiguration _configuration;
+
         private bool _hasCalibrated = false;
         private VideoCapture capture;
         private Mat frame;
@@ -70,6 +74,10 @@ namespace Lumia_EmoTunes
         public frmMain()
         {
             InitializeComponent();
+            _configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .Build();
             InitializeBrowser();
         }
 
@@ -629,10 +637,13 @@ namespace Lumia_EmoTunes
 
         private async Task<string> GetMoodVideoId(string emotion)
         {
+            string apiKey = _configuration["YouTubeSettings:ApiKey"];
+            string appName = _configuration["YouTubeSettings:ApplicationName"];
+
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = "AIzaSyAIEBpYE4ej412t5-Q1uZvrhmZzyYjXFW0",
-                ApplicationName = "LumiaEmoTunes"
+                ApiKey = apiKey,
+                ApplicationName = appName
             });
 
             string specificVibe = "";
@@ -671,7 +682,7 @@ namespace Lumia_EmoTunes
             searchRequest.Order = orders[rng.Next(orders.Length)];
 
             var response = await searchRequest.ExecuteAsync();
-
+                
             if (response.Items.Count > 0)
             {
                 int randomIndex = rng.Next(response.Items.Count);
